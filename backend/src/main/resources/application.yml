@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: tarefas-api
+  datasource:
+    url: jdbc:h2:mem:tarefas;DB_CLOSE_DELAY=-1
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  h2:
+    console:
+      enabled: true
+
+app:
+  cors:
+    allowed-origins: http://localhost:5173
